@@ -1,0 +1,45 @@
+.Container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+}
+
+.ContainerOpen {
+  transform: translateX(0%);
+}
+
+.ContainerClosed {
+  transform: translateX(-300%);
+}
+
+.NavItems {
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.NavItemsOpen {
+  transform: translateX(0%);
+}
+
+.NavItemsClosed {
+  transform: translateX(-300%);
+}
