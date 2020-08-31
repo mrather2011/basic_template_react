@@ -8,18 +8,11 @@ const Navbar = (props) => {
 
   const sideDrawerToggle = () => {
     toggleSideDrawer(!sideDrawerOpen);
-    console.log(sideDrawerOpen);
   };
 
   return (
-    <div
-      onClick={sideDrawerToggle}
-      className={[
-        classes.Backdrop,
-        sideDrawerOpen ? classes.BackdropOpen : classes.BackdropClosed,
-      ].join(" ")}
-    >
-      <SideDrawer toggleSideDrawer={toggleSideDrawer} sDOpen={sideDrawerOpen} />
+    <Fragment>
+      <SideDrawer toggleSideDrawer={sideDrawerToggle} sDOpen={sideDrawerOpen} />
       <div className={classes.Container}>
         <div className={classes.LogoContainer}>
           <h1>LOGO</h1>
@@ -28,7 +21,7 @@ const Navbar = (props) => {
           <FaAlignJustify size="2.5rem" />
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
