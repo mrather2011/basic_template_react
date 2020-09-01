@@ -3,7 +3,7 @@ import classes from "./Contact.module.scss";
 
 const Contact = (props) => {
   return (
-    <div className="Container">
+    <div id="Contact" className="Container">
       <h1>Contact</h1>
     </div>
   );

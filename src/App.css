@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: lato;
+  font-weight: 300;
 }
 
 ul {
@@ -12,15 +16,15 @@ a {
 }
 
 .Container {
-  height: calc(100vh - 150px);
+  height: 100vh;
   width: 100%;
   padding: 0 100px;
   position: relative;
-  top: 150px;
+  top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   border: 1px solid red;
 }

@@ -1,34 +1,30 @@
-.Backdrop {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
-
-.BackdropOpen {
-  background: rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-  z-index: 9999;
-}
-
-.BackdropClosed {
-  background: transparent;
-  z-index: -99;
-}
-
 .Container {
   width: 100%;
-  height: 150px;
   position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
-  border-bottom: 1px solid black;
   z-index: 1;
 }
 
+.ContainerFull {
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ContainerShort {
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
 .LogoContainer {
+  h1 {
+    color: #fff;
+  }
 }
 
 .DropdownContainer {

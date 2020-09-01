@@ -3,7 +3,7 @@ import classes from "./Testimonials";
 
 const Testimonials = (props) => {
   return (
-    <div className="Container">
+    <div id="Testimonials" className="Container">
       <h1>Testimonials</h1>
     </div>
   );

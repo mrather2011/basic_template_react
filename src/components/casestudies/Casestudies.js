@@ -3,7 +3,7 @@ import classes from "./Casestudies.module.scss";
 
 const Casestudies = (props) => {
   return (
-    <div className="Container">
+    <div id="Contact" id="CaseStudies" className="Container">
       <h1>Case Studies</h1>
     </div>
   );

@@ -3,7 +3,7 @@ import classes from "./Footer.module.scss";
 
 const Footer = (props) => {
   return (
-    <div className={classes.Container}>
+    <div id="Footer" className={classes.Container}>
       <h1>Footer</h1>
     </div>
   );
